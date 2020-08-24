@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel = "stylesheet" type = "text/css" href = "main.css" />
+    <title>Document</title>
+</head>
+<body>
+
+
+    <div class="calculator">
+        <div class="wrapper">
+    <div><input type="text" id='a'></div>
+    <div><input type="text" id='b'></div>
+    <div class="buttonwrapper">
+    <div><button onclick="add()"> +</button></div>
+    <div><button onclick="subtract()"> -</button></div>
+    <div><button onclick="multiply()"> *</button></div>
+    <div><button onclick="divide()"> /</button></div>
+    </div>
+    <p id='result' style="border-block-color: red;">Result is</p>
+    </div>
+        </div>
+</body>
+<script>
+    function add(){
+        var a=document.getElementById('a').value;
+        a=parseInt(a)
+        var b=document.getElementById('b').value;
+        b=parseInt(b)
+        var result =document.getElementById('result')
+        result.textContent=(a+b)
+
+    }
+    function subtract(){
+        var a=document.getElementById('a').value;
+        a=parseInt(a)
+        var b=document.getElementById('b').value;
+        b=parseInt(b)
+        var result=document.getElementById('result')
+        result.textContent=(a-b)
+    }
+    function multiply(){
+        var a=document.getElementById('a').value;
+        a=parseInt(a)
+        var b=document.getElementById('b').value;
+        b=parseInt(b)
+        var result=document.getElementById('result')
+        result.textContent=(a*b)
+    }
+    function divide(){
+        var a=document.getElementById('a').value;
+        a=parseInt(a)
+        var b=document.getElementById('b').value;
+        b=parseInt(b)
+        var result=document.getElementById('result')
+        result.textContent=(a/b)
+    }
+
+</script>
+</html>
